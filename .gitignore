@@ -34,7 +34,7 @@ build/
 
 #gitignore
 target/
-.mvn/
+
 .settings/
 .classpath
 .project
