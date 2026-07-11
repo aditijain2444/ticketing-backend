@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/events")
-@CrossOrigin(origins = "http://localhost:5173") // allows our future React app to call this
+@CrossOrigin(origins = {"http://localhost:5173", "https://ticketing-frontend-alpha.vercel.app"}) 
 public class EventController {
 
     @Autowired
