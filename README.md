@@ -2,6 +2,14 @@
 
 A full-stack event ticketing system (similar to BookMyShow/Ticketmaster) where users browse events, select seats from a live seat map, hold them temporarily, and pay via Razorpay — with race-condition-safe seat booking under concurrent load.
 
+## Live Demo
+
+- **App**: https://ticketing-frontend-alpha.vercel.app
+- **Backend API**: https://ticketing-backend-1-2u57.onrender.com/api/events
+
+> Note: the backend is hosted on Render's free tier, which spins down after ~15 minutes of inactivity. The first request may take 30–50 seconds to wake it back up — this is expected, not a bug.
+
+
 ## Why this project
 
 Most CRUD portfolio projects don't touch the hard part of real ticketing systems: **what happens when two people click the same seat at the same time?** This project solves that with database-level optimistic locking, backed by an automated concurrency test that proves it.
